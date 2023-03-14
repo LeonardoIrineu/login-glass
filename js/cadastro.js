@@ -60,7 +60,7 @@ password.addEventListener('keyup', () => {
 confirmPass.addEventListener('keyup', () => {
     if (password.value != confirmPass.value) {
         labelConfirmPass.setAttribute("style", "color:red")
-        labelConfirmPass.innerHTML = 'As devem ser iguais'
+        labelConfirmPass.innerHTML = 'As senhas devem ser iguais'
         validConfirmPass = false
     } else {
         labelConfirmPass.setAttribute("style", 'color:white')
