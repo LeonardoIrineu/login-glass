@@ -13,26 +13,28 @@
     <section>
         <div class="form-box">
             <div class="form-value">
-                <form action="">
+                <div action="">
                     <h2>Login</h2>
+                    <div id="error"></div>
+                    <div id="sucesso"></div>
                     <div class="inputbox">
                         <i class="fa-solid fa-envelope"></i>
                         <input type="email" name="email" id="email">
-                        <label for="email">E-mail</label>
+                        <label for="email" id="labelEmail">E-mail</label>
                     </div>
                     <div class="inputbox">
-                        <i class="fa-solid fa-lock"></i>
+                        <i class="fa-solid fa-lock" id="verPassword"></i>
                         <input type="password" name="password" id="password">
-                        <label for="password">Password</label>
+                        <label for="password" id="labelPassword">Password</label>
                     </div>
                     <div class="forget">
                         <label for=""><input type="checkbox" name="" id="">Salvar Senha <a href="#">Esqueceu a senha?</a></label>
                     </div>
-                    <button>Entrar</button>
+                    <button onclick="entrar()">Entrar</button>
                     <div class="register">
                         <p>Não tem uma conta?<a href="#">Cadastre-se</a></p>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </section>
